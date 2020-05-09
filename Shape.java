@@ -7,5 +7,5 @@ public abstract class Shape{
 		return name;
 	}
     public abstract double getArea();
-    public abstract double getVolume();
+    //public abstract double getVolume();
    }

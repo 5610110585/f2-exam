@@ -15,7 +15,7 @@ public class Sphere extends Shape implements AreaCalculable{	//concrete class
 	}
 
 	public double geVolume(){
-		return Math.PI * radius * radius;
+		return Math.PI * radius * radius * radius * ;
 	}
 
 	public static void main(String[] args){
