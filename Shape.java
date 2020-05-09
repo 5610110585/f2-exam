@@ -1,4 +1,4 @@
-public abstract class Shape{
+public abstract class Shape implements Comparable<Shape>{
 	private String name;
 	public Shape(String name){
 		this.name = name;
@@ -8,4 +8,8 @@ public abstract class Shape{
 	}
     public abstract double getArea();
     //public abstract double getVolume();
+    
+    public int compareTo(Shape e){
+		return name.compareTo(e.name);
+	}
    }

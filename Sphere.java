@@ -22,7 +22,7 @@ public class Sphere extends Shape implements VolumeCalculable{	//concrete class
 	}
 
 	public static void main(String[] args){
-		Sphere c = new Sphere("C", 2);
+		Sphere c = new Sphere("C", 3.0);
 		System.out.println("Area of " +  c.getName() + " is " + c.getVolume());
 	}
 }
