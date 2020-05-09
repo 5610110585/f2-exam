@@ -26,7 +26,13 @@ public class Rectangle extends Shape implements AreaCalculable{	//concrete class
 
 	public double getArea(){
 		return width * height;
+    }
+    
+    public void zoom(double factor){
+		width = width * factor;
+		height = height * factor;
 	}
+
 
 	public static void main(String[] args){
 		Rectangle c = new Rectangle("G12", 2.0, 8.0);

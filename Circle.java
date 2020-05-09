@@ -16,8 +16,10 @@ public class Circle extends Shape implements AreaCalculable{	//concrete class
 
 	public double getArea(){
 		return Math.PI * radius * radius;
-	}
-
+    }
+    public void zoom(double factor){
+		radius = radius * factor;
+    }
 	public static void main(String[] args){
 		Circle c = new Circle("G11", 3.0);
 		System.out.println("Area of " +  c.getName() + " is " + c.getArea());
