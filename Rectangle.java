@@ -29,7 +29,7 @@ public class Rectangle extends Shape implements AreaCalculable{	//concrete class
 	}
 
 	public static void main(String[] args){
-		Rectangle c = new Rectangle("R1", 2, 3);
+		Rectangle c = new Rectangle("G12", 2.0, 8.0);
 		System.out.println("Area of " + c.getName() + " is " + c.getArea());
 	}
 }

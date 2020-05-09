@@ -1,7 +1,7 @@
-public class Sphere extends Shape implements AreaCalculable{	//concrete class
+public class Sphere extends Shape implements VolumeCalculable{	//concrete class
 	private double radius;
 
-	public Circle(String name, double radius){
+	public Sphere(String name, double radius){
 		super(name);
 		this.radius = radius;
 	}
@@ -12,14 +12,17 @@ public class Sphere extends Shape implements AreaCalculable{	//concrete class
 
 	public void setRadius(double radius){
 		this.radius = radius;
+    }
+    public double getArea(){
+		return Math.PI * radius * radius;
 	}
 
-	public double geVolume(){
-		return Math.PI * radius * radius * radius * ;
+	public double getVolume(){
+		return ( 4.0 / 3.0 ) * Math.PI * Math.pow( radius, 3.0 );
 	}
 
 	public static void main(String[] args){
-		Circle c = new Circle("C1", 2);
-		System.out.println("Area of " +  c.getName() + " is " + c.getArea());
+		Sphere c = new Sphere("C", 2);
+		System.out.println("Area of " +  c.getName() + " is " + c.getVolume());
 	}
 }
